@@ -94,13 +94,15 @@ section{scroll-margin-top:110px}.section-heading{max-width:700px;margin-bottom:3
 .footer{display:block;overflow:hidden;padding:0;border-top:1px solid var(--line)}
 .footer-marquee{width:100%;overflow:hidden;padding:18px 0;mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent)}
 .footer-track{display:flex;width:max-content;gap:18px;align-items:center;animation:marqueeLeft 28s linear infinite;will-change:transform}
-.footer-track:hover{animation-play-state:paused}
-.footer-track a,.footer-track span{font-family:"Geist Mono",monospace;font-size:13px;color:var(--muted);white-space:nowrap;border:1px solid var(--line);border-radius:999px;padding:9px 13px;background:rgba(255,255,255,.025)}
-.footer-track a{color:var(--text);text-decoration:none;text-decoration-color:transparent}
-.footer-track a:hover{color:var(--accent);border-color:rgba(216,255,95,.55);background:rgba(216,255,95,.08)}
+.footer-track a,.footer-track span{font-family:"Geist Mono",monospace;font-size:13px;color:var(--muted);white-space:nowrap;padding:0 6px;background:transparent;border:0;border-radius:0;letter-spacing:.04em}
+.footer-track a{color:var(--text);text-decoration:none;text-decoration-color:transparent;animation:blinkInvite 1.55s ease-in-out infinite}
+.footer-track a:nth-child(2n){animation-delay:.28s}.footer-track a:nth-child(3n){animation-delay:.55s}
+.footer-track a:hover,.footer-track a:focus-visible{color:var(--accent);text-shadow:0 0 22px rgba(216,255,95,.5);outline:none}
+.footer-track a:after,.footer-track span:after{content:"•";color:rgba(216,255,95,.55);margin-left:18px}
 @keyframes riseIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @keyframes shineText{0%,100%{background-position:0% center}50%{background-position:100% center}}
 @keyframes marqueeLeft{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes blinkInvite{0%,100%{opacity:.72;text-shadow:none}45%{opacity:1;color:var(--accent);text-shadow:0 0 18px rgba(216,255,95,.45)}70%{opacity:.9}}
 @media (prefers-reduced-motion:reduce){.word-pop,.hero-copy,.hero-panel,.capability-strip,.section-heading,.cta-section,.footer-track{animation:none!important}.reveal-section{opacity:1;transform:none}.capability-strip span:before,.work-card:before,.process-list li:before,.skill-board article:before{display:none}}
 
 .work-card,.process-list li,.proof-rows article{opacity:1!important;transform:none}
