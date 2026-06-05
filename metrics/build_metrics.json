@@ -1,0 +1,13 @@
+{
+  "features_built": 6,
+  "routes_or_pages": 1,
+  "api_routes": 0,
+  "forms": 0,
+  "integrations": 2,
+  "tests_passed": 9,
+  "screenshots": 2,
+  "agent_tasks": 4,
+  "human_review_items": 4,
+  "bugs_fixed": 1,
+  "deployment_status": "local"
+}

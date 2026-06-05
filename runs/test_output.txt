@@ -1,0 +1,10 @@
+has_title: True
+has_h1: True
+has_claim_boundary: True
+has_maturity_table: True
+has_contact: True
+has_no_empty_case_placeholder: True
+has_mobile_media_query: True
+has_responsive_grid: True
+all_links_have_href: True
+PASS
