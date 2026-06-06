@@ -29,7 +29,7 @@ checks = {
     'has_h1': 'Hi, I’m Khang!' in html,
     'has_no_claim_boundary': 'Claim boundary' not in html and 'id="proof"' not in html,
     'has_work_section': 'Work that can be checked' in html,
-    'has_cta_section': 'Let’s build something useful' in html and 'Email me' in html,
+    'has_cta_section': 'Let’s build something useful' in html and 'mailto:khangdnguyen.work@gmail.com' in html,
     'has_contact': 'khangdnguyen.work@gmail.com' in html and '918 168 005' in html,
     'has_no_empty_case_placeholder': 'coming soon' not in html.lower(),
     'has_mobile_media_query': '@media (max-width:900px)' in css and '@media (max-width:560px)' in css,
