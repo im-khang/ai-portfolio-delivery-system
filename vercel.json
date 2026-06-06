@@ -1,9 +1,0 @@
-{
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "rewrites": [
-    { "source": "/", "destination": "/src/index.html" },
-    { "source": "/styles.css", "destination": "/src/styles.css" },
-    { "source": "/(.*)", "destination": "/src/$1" }
-  ]
-}

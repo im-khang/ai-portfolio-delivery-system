@@ -1,9 +1,0 @@
-{
-  "pages": 3,
-  "deployment_status": "live",
-  "verification_scripts": 1,
-  "html_pages_checked": 6,
-  "project_links_verified_live": 4,
-  "workflow": "AI agent + Open Design + human review + Vercel deploy",
-  "public_claim_boundary": "static portfolio build and deployment workflow"
-}

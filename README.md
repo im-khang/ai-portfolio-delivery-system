@@ -1,22 +1,16 @@
 # Agentic Portfolio Site
 
-A responsive portfolio website built to showcase practical solutions, AI-assisted delivery, and human-reviewed project work.
+A portfolio case study about using AI agents, Open Design, and human review to ship a practical personal website direction.
 
 Live site: https://01-agentic-portfolio-site.vercel.app/
 
 ## What this project demonstrates
 
-- Turning a personal positioning brief into a shipped static portfolio.
-- Using AI agents to draft, edit, QA, and iterate on site content.
-- Using Open Design as the visual source workflow, then syncing accepted output into a deployable static repo.
+- Turning a personal positioning brief into a clear portfolio direction.
+- Using AI agents to draft, critique, QA, and refine site content.
+- Using Open Design for visual exploration and handoff.
 - Keeping public copy concise, proof-backed, and recruiter-friendly.
-- Verifying pages with automated checks before deploy.
-
-## Pages
-
-- `index.html` — hero, positioning, skills, process, and contact.
-- `about.html` — background, working style, and AI/data focus.
-- `projects.html` — clean project showcase with GitHub links.
+- Reviewing project cards so they show clean project names and GitHub links.
 
 ## Featured project links
 
@@ -28,56 +22,25 @@ Live site: https://01-agentic-portfolio-site.vercel.app/
 ## Workflow
 
 1. Define portfolio direction and claim boundaries.
-2. Generate and refine the visual direction in Open Design.
-3. Sync accepted static HTML/CSS into this repository.
-4. Patch copy and links in source and mirrored public files.
-5. Run structural checks and stale-copy checks.
-6. Push to GitHub and deploy through Vercel.
+2. Explore visual direction in Open Design.
+3. Use AI agents for copy, structure, QA, and iteration.
+4. Apply human review to claims, tone, and project naming.
+5. Verify live site output and project links.
 
-## Verification
+## Repository scope
 
-```bash
-python3 scripts/check_site.py
-```
+This public repository keeps the case-study notes only. Source code, local scripts, generated assets, screenshots, and internal audit files were removed to keep the repo focused on the showcased workflow rather than local implementation artifacts.
 
-Expected result:
+Kept files:
 
 ```text
-PASS
-```
-
-Additional checks used before deploy:
-
-```bash
-python3 - <<'PY'
-from html.parser import HTMLParser
-from pathlib import Path
-for name in ['index.html','about.html','projects.html','src/index.html','src/about.html','src/projects.html']:
-    HTMLParser().feed(Path(name).read_text())
-    print('html_parse_ok', name)
-PY
-```
-
-## Deployment
-
-This repo is configured for Vercel static deployment with clean URLs via `vercel.json`.
-
-Production URL:
-
-```text
-https://01-agentic-portfolio-site.vercel.app/
-```
-
-## Repository structure
-
-```text
-src/                 mirrored source pages and styles used by Vercel rewrites
-scripts/             sync, local serve, and verification scripts
-ai_agents/           public workflow notes for AI-assisted build process
-screenshots/         desktop and mobile visual evidence
-metrics/             lightweight build and QA metrics
+README.md
+CASE_RESULT.md
+ai_agents/workflow.md
+ai_agents/qa_checklist.md
+ai_agents/prompts.md
 ```
 
 ## Claim boundary
 
-This project demonstrates a shipped static portfolio workflow using AI agents, Open Design, human review, and verification. It does not claim production backend integrations or enterprise-scale automation.
+This project demonstrates AI-assisted portfolio direction, Open Design collaboration, human review, and public project-link curation. It does not claim backend systems, production automation, or enterprise integrations.

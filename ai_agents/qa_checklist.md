@@ -7,15 +7,15 @@
 - [ ] Public pages stay focused on project outcomes, not internal work notes.
 - [ ] Contact links and project links are valid.
 
-## Static site checks
+## Repository hygiene
 
-- [ ] Root pages parse as HTML.
-- [ ] `src/` mirrored pages parse as HTML.
-- [ ] `python3 scripts/check_site.py` returns `PASS`.
-- [ ] Vercel `/projects` route returns HTTP `200` after deploy.
+- [ ] Repo keeps case-study notes only.
+- [ ] No source code files remain in the public repo.
+- [ ] No generated images or screenshots remain in the public repo.
+- [ ] No local scripts or audit artifacts remain in the public repo.
+- [ ] README explains AI agent + Open Design workflow clearly.
 
 ## Human review
 
 - [ ] Claims stay tied to visible evidence.
 - [ ] No private local paths are exposed in public content.
-- [ ] README explains AI agent + Open Design workflow clearly.
