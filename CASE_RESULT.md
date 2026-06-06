@@ -4,56 +4,46 @@
 
 Agentic Portfolio Site
 
-## Business Problem
+## Outcome
 
-Khang needs proof for Agentic Developer roles showing web/frontend ability, AI coding workflow, and honest claim boundaries.
+A deployed static portfolio website that presents Khang’s practical-solution direction, AI-assisted workflow, and selected project links.
 
-## What I Built
+Live site:
 
-A local responsive static portfolio page with:
+```text
+https://01-agentic-portfolio-site.vercel.app/
+```
 
-- Hero positioning for Agentic Developer / AI Workflow Builder
-- Proof pillars for website build, website enhancement, and website analytics
-- Controlled AI-agent workflow explanation
-- Tools/concepts maturity table
-- Current proof project section
-- Contact footer
+## What this showcases
 
-## AI Agent Workflow
+- Portfolio content strategy for AI + Data Analytics positioning.
+- Open Design visual workflow for a clean dark hero and responsive layout.
+- AI-agent assisted iteration for copy, structure, QA, and deploy preparation.
+- Human review for claim boundaries, tone, project naming, and public-facing scope.
+- Static deployment through GitHub and Vercel.
 
-See `ai_agents/workflow.md`.
+## Built pages
 
-## Human Review
+- Home: positioning, skills, process, and contact.
+- About: background and working style.
+- Projects: clean project names and GitHub links.
 
-Review focus:
+## Verification evidence
 
-- No overclaiming production integrations.
-- No fake completed case studies.
-- Mobile and desktop responsive screenshots exist.
-- Claim boundary visible.
+- Structural site check: `python3 scripts/check_site.py` → `PASS`.
+- HTML parse checks for root and `src/` pages.
+- Live `/projects` route returned HTTP `200` after deployment.
+- Live page contained all four expected GitHub project links.
 
-## Evidence
+## Recruiter-relevant skills
 
-- Local page: `src/index.html`
-- Styles: `src/styles.css`
-- Screenshots: `screenshots/desktop.png`, `screenshots/mobile.png`
-- Test output: `runs/test_output.txt`
-- Metrics: `metrics/build_metrics.json`
+- Responsive HTML/CSS site delivery.
+- Open Design to static-site handoff.
+- AI-agent workflow orchestration.
+- Copy refinement for honest proof and concise positioning.
+- Automated QA before deploy.
+- GitHub + Vercel deployment workflow.
 
-## Metrics
+## Claim boundary
 
-See `metrics/build_metrics.json`.
-
-## Honest Limitations
-
-- Local static proof only.
-- Not deployed live yet.
-- Project 2 and 3 are named as plans until built.
-
-## Recruiter-Relevant Skills
-
-- Responsive HTML/CSS
-- Frontend content architecture
-- AI-agent workflow explanation
-- Claim boundary discipline
-- Browser verification and screenshot evidence
+This case proves a static portfolio build and deployment workflow. It does not claim backend systems, live production automations, or enterprise integrations.

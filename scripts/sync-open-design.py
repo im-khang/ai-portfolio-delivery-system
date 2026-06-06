@@ -13,7 +13,7 @@ import shutil
 from pathlib import Path
 
 PROJECT_ID = "3f80c890-4515-4943-ac71-04b29a1954af"
-OD_PROJECT_DIR = Path("/Users/nguyenduykhang/open-design/.od/projects") / PROJECT_ID
+OD_PROJECT_DIR = Path.home() / "open-design/.od/projects" / PROJECT_ID
 REPO_DIR = Path(__file__).resolve().parents[1]
 SRC_DIR = REPO_DIR / "src"
 

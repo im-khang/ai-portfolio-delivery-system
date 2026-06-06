@@ -1,31 +1,33 @@
 # AI Agent Workflow
 
-## Human need
+## Human goal
 
-Build Project 1: a responsive portfolio site that positions Khang for Agentic Developer / AI Workflow Builder roles, with visible claim boundaries and no fake case studies.
+Build and ship a concise portfolio website for Khang that communicates practical-solution work, AI-assisted delivery, and human-reviewed project judgment.
 
-## Agent tasks
+## Agent-assisted workflow
 
-- Inspected scaffold and tool availability.
-- Built static HTML/CSS page.
-- Added local server script.
-- Added structural verification script.
-- Ran local server and generated desktop/mobile screenshots with headless Chrome.
+1. Interpret positioning constraints and public claim boundaries.
+2. Generate and refine visual direction through Open Design.
+3. Sync accepted static HTML/CSS into the repository.
+4. Patch source and mirrored pages together so deployment output stays consistent.
+5. Run automated page checks before push.
+6. Verify deployed routes and GitHub links after push.
 
-## Human checks encoded
+## Human review points
 
-- Public copy avoids production claims without proof.
-- Case section labels future projects as local plans, not completed work.
-- Claim boundary table separates proven locally, blueprint-ready, and need-live-proof tools.
-- Contact and GitHub/LinkedIn links included.
+- Portfolio wording says “practical solutions,” not generic web tools.
+- Project cards show clean names and GitHub links only.
+- Public content does not expose internal rebuild notes or local audit process.
+- Claims stay tied to visible evidence: repo, screenshots, command output, or live URL.
+- Tone stays concise, recruiter-friendly, and honest.
 
-## Debug/fix log
+## Verification used
 
-- Previous tool turn returned empty response after initialization; continued by processing results and building site.
-- Server process was started as long-lived background process and killed after screenshots.
+- `python3 scripts/check_site.py`
+- HTML parser checks for root and `src/` pages.
+- Stale-copy search for outdated public wording.
+- Live route check with `curl` after deployment.
 
-## Verification
+## Result
 
-- `python3 scripts/check_site.py` returned `PASS`.
-- Local HTTP fetch found `Agentic Developer` in HTML.
-- Headless Chrome generated `screenshots/desktop.png` and `screenshots/mobile.png`.
+The site was pushed to GitHub and deployed on Vercel with `/projects` returning HTTP `200` and expected GitHub links present.
